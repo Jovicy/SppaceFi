@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
+}
+
+.header__logo {
+    cursor: pointer;
+}
+
+.nav {
+
+    &__links {
+        list-style: none;
+    }
+    
+    &__links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    &__links li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    &__links li a:hover {
+        color: #008Ba9;
+    }
+
+    &__icons a {
+        display: inline-block;
+        padding: 0px 4px;
+    }
+}
+

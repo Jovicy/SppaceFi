@@ -1,0 +1,14 @@
+.btn {   
+     
+    &__nav {
+        padding: 8px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        background: #ffffff;
+        border: none;
+        color: #3F37C9;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+}
