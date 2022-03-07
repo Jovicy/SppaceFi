@@ -58,16 +58,13 @@ header {
   background-image: url("../images/Group 1 (1).png");
   background-size: 700px;
   background-repeat: no-repeat;
-  background-position: right;
-  position: relative;
-  top: -25px; }
+  background-position: right; }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 73px;
-  z-index: 1; }
+  height: 73px; }
 
 .navigation__logo {
   cursor: pointer; }
