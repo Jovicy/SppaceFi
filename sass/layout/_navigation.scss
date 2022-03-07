@@ -1,15 +1,16 @@
-header {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 83px;
+    height: 73px;
+    z-index: 1;
 }
 
-.header__logo {
+.navigation__logo {
     cursor: pointer;
 }
 
-.nav {
+.navigation {
 
     &__links {
         list-style: none;
@@ -25,7 +26,7 @@ header {
     }
     
     &__links li a:hover {
-        color: #008Ba9;
+        color: $nav-hover;
     }
 
     &__icons a {
