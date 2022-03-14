@@ -7,8 +7,38 @@
         background: $color-white;
         border: none;
         color: $btn-color;
-        border-radius: 3px;
+        border-radius: $nav-btn;
         cursor: pointer;
         transition: all 0.3s ease 0s;
+
+        &:hover {
+            background: $btn-color;
+            color: $color-white;
+        }
+    }
+
+    &__header {
+        display: flex;
+        grid-gap: 8px;
+        align-items: center;
+        padding: 25px 111px;
+        border: 1px solid $hero-btn-bdr;
+        background: none;
+        border-radius: $hero-btn;
+        cursor: pointer;
+        transition: all 0.30s ease 0s;
+
+        &:hover {
+            background: $btn-color;
+            border: 1px solid $btn-color;
+        }
+    }
+    
+    &__header p{
+        color: $color-white;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-m;
+        font-size: $btn-font;
+        line-height: 25px;
     }
 }

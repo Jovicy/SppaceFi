@@ -3,5 +3,47 @@ header {
     background-image: url('../images/Group\ 1\ \(1\).png');
     background-size: 700px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    &__text-box {
+        margin-bottom: 40px;
+    }
+
+    &__text-box h2 {
+        font-style: $font-style-normal;
+        font-weight: $bold;
+        font-size: $hero-font;
+        line-height: 99px;
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+
+    &__text-box p {
+        font-family: Open Sans;
+        font-style: $font-style-normal;
+        font-weight: $font-style-normal;
+        font-size: $hero-paragraph;
+        line-height: 33px;
+        color: $default-color;
+    }
+
+    &__btn-box {
+        display: flex;
+        grid-gap: 10px;
+    }
+
+}
+
+.colored {
+    background: $btn-color;
+    border: none;
+
+    &:hover {
+        background: none;
+        border: 1px solid $hero-btn-bdr;
+    }
 }

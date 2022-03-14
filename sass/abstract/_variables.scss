@@ -1,7 +1,7 @@
 // Color
 $default-body-color: #081329;
 
-$default-color: rgba(255, 255, 255, 0.55); 
+$default-color: #A1A6B1; 
 
 $color-white: #fff;
 
@@ -12,9 +12,15 @@ $default-font-family: 'Open Sans', sans-serif;
 
 $default-font-size: 16px; 
 
+$hero-font: 73px; 
+
+$btn-font: 18px; 
+
+$hero-paragraph: 24px; 
+
 $font-weight-sm: 100;
 
-$font-weight-normal: normal;
+$font-style-normal: normal;
 
 $font-weight-sml: 300;
 
@@ -24,7 +30,15 @@ $font-weight-md: 700;
 
 $font-weight-l: 800; 
 
-$font-weight-lg: 900; 
+$font-weight-lg: 900;
+
+$bold: bold; 
 
 // Buttons
 $btn-color: #3F37C9;
+
+// Borders 
+$hero-btn: 8px;
+$hero-btn-bdr: #F5F5FC;
+
+$nav-btn: 3px;

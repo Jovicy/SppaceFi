@@ -1,0 +1,33 @@
+.community {
+    background: $color-white;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+
+    &__main {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__text h3{
+        font-size: 36px;
+        font-weight: $font-weight-m;
+        line-height: 49px;
+    }
+
+    &__media {
+        display: flex;
+    }
+
+    &__img {
+        background: #D9D7F4;
+        margin: 0px 64px;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

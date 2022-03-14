@@ -15,7 +15,7 @@ body {
   padding: 0 15px; }
 
 li, a {
-  color: rgba(255, 255, 255, 0.55);
+  color: #A1A6B1;
   font-weight: normal;
   font-size: 16px;
   text-decoration: none; }
@@ -52,13 +52,76 @@ li, a {
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease 0s; }
+  .btn__nav:hover {
+    background: #3F37C9;
+    color: #fff; }
+
+.btn__header {
+  display: flex;
+  grid-gap: 8px;
+  align-items: center;
+  padding: 25px 111px;
+  border: 1px solid #F5F5FC;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.30s ease 0s; }
+  .btn__header:hover {
+    background: #3F37C9;
+    border: 1px solid #3F37C9; }
+
+.btn__header p {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px; }
+
+.footer {
+  padding: 5rem 0; }
+  .footer__main {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 header {
   height: 95vh;
   background-image: url("../images/Group 1 (1).png");
   background-size: 700px;
   background-repeat: no-repeat;
-  background-position: right; }
+  background-position: right top;
+  display: flex;
+  align-items: center; }
+
+.header__text-box {
+  margin-bottom: 40px; }
+
+.header__text-box h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 73px;
+  line-height: 99px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.header__text-box p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #A1A6B1; }
+
+.header__btn-box {
+  display: flex;
+  grid-gap: 10px; }
+
+.colored {
+  background: #3F37C9;
+  border: none; }
+  .colored:hover {
+    background: none;
+    border: 1px solid #F5F5FC; }
 
 .navigation {
   display: flex;
@@ -85,3 +148,27 @@ header {
 .navigation__icons a {
   display: inline-block;
   padding: 0px 4px; }
+
+.community {
+  background: #fff;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center; }
+  .community__main {
+    display: flex;
+    gap: 40px; }
+  .community__text h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49px; }
+  .community__media {
+    display: flex; }
+  .community__img {
+    background: #D9D7F4;
+    margin: 0px 64px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
