@@ -1,3 +1,19 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   is where our normal styles apply
+1800px + :      Big desktop
+*/
+/*
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,11 +24,17 @@
 body {
   background: #081329;
   font-family: "Open Sans", sans-serif; }
+  @media (min-width: 112.5em) {
+    body {
+      display: none; } }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
+  @media (max-width: 75em) {
+    .container {
+      padding-left: 50px; } }
 
 li, a {
   color: #A1A6B1;
@@ -54,7 +76,8 @@ li, a {
   transition: all 0.3s ease 0s; }
   .btn__nav:hover {
     background: #3F37C9;
-    color: #fff; }
+    color: #fff;
+    transition: .5s; }
 
 .btn__header {
   display: flex;
@@ -68,7 +91,8 @@ li, a {
   transition: all 0.30s ease 0s; }
   .btn__header:hover {
     background: #3F37C9;
-    border: 1px solid #3F37C9; }
+    border: 1px solid #3F37C9;
+    transition: .5s; }
 
 .btn__header p {
   color: #fff;
@@ -110,13 +134,17 @@ li, a {
       color: #081f6b; }
 
 header {
-  height: 95vh;
+  padding: 8.5rem 0;
   background-image: url("../images/Group 1 (1).png");
   background-size: 700px;
   background-repeat: no-repeat;
   background-position: right top;
   display: flex;
   align-items: center; }
+  @media (min-width: 112.5em) {
+    header {
+      height: 50vh;
+      background: none; } }
 
 .header__text-box {
   margin-bottom: 40px; }
@@ -150,29 +178,35 @@ header {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   justify-content: space-between;
-  height: 73px; }
-
-.navigation__logo {
-  cursor: pointer; }
-
-.navigation__links {
-  list-style: none; }
-
-.navigation__links li {
-  display: inline-block;
-  padding: 0px 20px; }
-
-.navigation__links li a {
-  transition: all 0.3s ease 0s; }
-
-.navigation__links li a:hover {
-  color: #081f6b; }
-
-.navigation__icons a {
-  display: inline-block;
-  padding: 0px 4px; }
+  min-height: 8vh; }
+  .navigation__links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    overflow: hidden;
+    transition: all 0.3s linear; }
+  .navigation__links li {
+    padding: 0px 20px; }
+  .navigation__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px; }
+  .navigation__links li a:hover {
+    color: #081f6b;
+    transition: .5s; }
+  .navigation__icons a {
+    display: inline-block;
+    padding: 0px 4px; }
+  .navigation__logo {
+    cursor: pointer; }
+  .navigation__burger {
+    display: none;
+    cursor: pointer; }
 
 .community {
   background: #fff;

@@ -1,36 +1,46 @@
 .navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-between;
-    height: 73px;
-}
-
-.navigation__logo {
-    cursor: pointer;
-}
-
-.navigation {
+    min-height: 8vh;
 
     &__links {
+        display: flex;
+        flex-direction: row;
         list-style: none;
+        overflow: hidden;
+        transition: all 0.3s linear;
     }
     
     &__links li {
-        display: inline-block;
         padding: 0px 20px;
     }
     
     &__links li a {
         transition: all 0.3s ease 0s;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-size: 14px;
     }
     
     &__links li a:hover {
         color: $nav-hover;
+        ;transition: .5s
     }
 
     &__icons a {
         display: inline-block;
         padding: 0px 4px;
     }
-}
 
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+    }
+}

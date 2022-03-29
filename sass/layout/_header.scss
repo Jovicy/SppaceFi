@@ -1,11 +1,16 @@
 header {
-    height: 95vh;
+    padding: 8.5rem 0;
     background-image: url('../images/Group\ 1\ \(1\).png');
     background-size: 700px;
     background-repeat: no-repeat;
     background-position: right top;
     display: flex;
     align-items: center;
+
+    @include respond(big-desktop) {
+        height: 50vh;
+        background: none;
+    }
 }
 
 .header {
