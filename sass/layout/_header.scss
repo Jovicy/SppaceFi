@@ -25,6 +25,10 @@ header {
         line-height: 99px;
         color: $color-white;
         margin-bottom: 10px;
+
+        @include respond(tab-port) {
+            font-size: $mid-font;
+        }
     }
 
     &__text-box p {
@@ -34,6 +38,10 @@ header {
         font-size: $hero-paragraph;
         line-height: 33px;
         color: $default-color;
+
+        @include respond(tab-port) {
+            font-size: $default-mid-size;
+        }
     }
 
     &__btn-box {

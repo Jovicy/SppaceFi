@@ -7,12 +7,21 @@
     &__main {
         display: flex;
         gap: 40px;
+
+        @include respond(tab-port) {
+            gap: 25px;
+        }
     }
 
     &__text h3{
         font-size: 36px;
         font-weight: $font-weight-m;
         line-height: 49px;
+
+        @include respond(tab-port) {
+            font-size: 27px;
+            line-height: 30px;
+        }
     }
 
     &__media {

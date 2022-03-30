@@ -9,19 +9,20 @@
 body {
     background: $default-body-color;
     font-family: $default-font-family;
-
-    @include respond(big-desktop) {
-        display: none;
-    }
 }
 
 .container {
-    width: 1200px;
+    width: 90vw;
     margin: 0 auto;
     padding: 0 15px;
 
     @include respond(tab-land) {
-        padding-left: 50px;
+        width: 100vw;
+        padding: 0 40px;
+    }
+
+    @include respond(big-desktop) {
+        width: 60vw;
     }
 
 }

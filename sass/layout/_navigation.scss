@@ -3,18 +3,35 @@
     justify-content: space-between;
     align-items: center;
     justify-content: space-between;
-    min-height: 8vh;
+    min-height: 10vh;
+
+    @include respond(tab-land) {
+        padding: 0 0px;
+    }
 
     &__links {
         display: flex;
         flex-direction: row;
         list-style: none;
         overflow: hidden;
-        transition: all 0.3s linear;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            background: $nav-hover;
+            margin-top: -900px;
+            transition: all 0.5s ease-in;
+        }
     }
     
     &__links li {
         padding: 0px 20px;
+
+        @include respond(tab-land) {
+            margin: 30px auto;
+        }
     }
     
     &__links li a {
@@ -27,20 +44,50 @@
     
     &__links li a:hover {
         color: $nav-hover;
-        ;transition: .5s
-    }
-
-    &__icons a {
-        display: inline-block;
-        padding: 0px 4px;
+        transition: .5s
     }
 
     &__logo {
         cursor: pointer;
+
+        @include respond(tab-land) {
+            position: absolute;
+            top: 30px;
+            left: 30px; 
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+
+    @include respond(tab-land) {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px; 
+    }
+}
+
+.mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+}
+
+.Icons{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    
+    @include respond(tab-land) {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 23em;
+        top: 21px;
+        position: absolute;
+        margin: 0 auto; 
     }
 
-    &__burger {
-        display: none;
-        cursor: pointer;
-    }
 }
